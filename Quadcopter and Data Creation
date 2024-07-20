@@ -1,0 +1,38 @@
+Quadcopter and Data Creation 
+
+_ parrotObj = parrot
+_ parrotObj = parrot(droneName)
+_ parrotObj = parrot(droneID)
+
+Description
+
+parrotObj = parrot connects to the first available Parrot drone over the wireless network.
+parrotObj = parrot(droneName) connects to the Parrot drone with the specified name over the wireless network.
+parrotObj = parrot(droneID) connects to a Parrot drone with a specific ID over the wireless network.
+
+
+Fonctions
+
+Vol de base
+_ takeoff	Initiate Parrot drone takeoff
+_ land	Land Parrot drone
+_ abort	End flight of Parrot drone
+Vol avancé
+
+_ flip	Flip Parrot drone in specified direction
+
+_ move	Move Parrot drone in all six directions
+
+_ moveback	Move Ryze drone backwards (depuis R2020a)
+
+_ movedown	Move Ryze drone down (depuis R2020a)
+
+_ moveforward	Move Ryze drone forward (depuis R2020a)
+
+_ moveleft	Move Ryze drone left (depuis R2020a)
+
+_ moveright	Move Ryze drone right (depuis R2020a)
+
+_ moveup	Move Ryze drone upwards (depuis R2020a)
+
+_ turn	Turn Parrot drone at specified angle
