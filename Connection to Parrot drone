@@ -1,0 +1,36 @@
+Connect to a Parrot drone.
+
+parrotObj = parrot()
+parrotObj = 
+          parrot with properties:
+
+                    Name: "Mambo"
+                      ID: "Mambo_564853"
+                   State: "landed"
+            BatteryLevel: 50%
+        AvailableCameras: ["FPV"]
+
+
+Connect to a Parrot Mambo FPV drone over a wireless network.
+
+parrotObj = parrot('Mambo')
+parrotObj = 
+          parrot with properties:
+
+                    Name: "Mambo"
+                      ID: "Mambo_564853"
+                   State: "landed"
+            BatteryLevel: 50%
+        AvailableCameras: ["FPV"]
+
+Connect to a specific Parrot Mambo FPV drone with the ID over a wireless network.
+
+parrotObj = parrot('Mambo_564853')
+parrotObj = 
+          parrot with properties:
+
+                    Name: "Mambo"
+                      ID: "Mambo_564853"
+                   State: "landed"
+            BatteryLevel: 50%  
+        AvailableCameras: ["FPV"]
