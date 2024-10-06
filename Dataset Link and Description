@@ -1,0 +1,58 @@
+The dataset is available at this link:
+https://drive.google.com/drive/folders/1t1GQPQyISgc-cwicCmanfKaKRQbeXuyA?usp=drive_link 
+
+UAV Dataset Description
+The dataset contains telemetry data from a Unmanned Aerial Vehicle (UAV), with measurements taken at specific time intervals. Each row of the dataset represents a snapshot of the UAV's operational status and performance metrics. Below is a breakdown of the key fields:
+
+time: Represents the timestamp for each data entry, indicating when the measurements were taken.
+
+m2_cmd, m1_cmd, m4_cmd, m3_cmd: These columns correspond to the command values sent to each of the four motors of the UAV. Each value indicates the intended power or throttle for the respective motor.
+
+x_actual, y_actual, z_actual: These fields represent the UAV's actual position in a three-dimensional space, indicating its coordinates along the x, y, and z axes.
+
+clock: This field likely represents the system clock time, used for synchronizing data collection.
+
+mvx, mvy, mvz: These fields show the UAV's movement velocities in the x, y, and z directions, respectively.
+
+roll, yaw, pitch: These values describe the UAV's orientation in space. Roll indicates rotation around the x-axis, yaw indicates rotation around the z-axis, and pitch indicates rotation around the y-axis.
+
+load_status: This field provides information about the UAV's load status, likely indicating whether it is carrying any additional payload.
+
+rpm_m1, rpm_m2, rpm_m3, rpm_m4: These columns show the revolutions per minute (RPM) for each of the four motors, indicating their operational speeds.
+
+I_m1, I_m2, I_m3, I_m4: These fields represent the current (in amperes) for each motor, showing the electrical consumption.
+
+T_m1, T_m2, T_m3, T_m4: These columns indicate the temperature (in degrees Celsius) of each motor, providing insights into the thermal performance during operation.
+
+Temp_R_1, Temp_A_1, Temp_B_1, Temp_C_1: These fields represent the temperatures of various sensors or components for motor 1, including reference and ambient temperatures.
+
+fault: This column indicates whether any faults were detected during the operation, providing critical information for diagnosing potential issues.
+
+Example Data Entry
+Entry at time 0: The UAV has equal motor commands set at approximately 4398.23, with an actual position near the origin of the coordinate system (x: -3, y: -5, z: 0.06). The velocities (mvx, mvy, mvz) are zero, indicating no movement at this moment. The roll, yaw, and pitch angles are also zero, suggesting the UAV is in a stable orientation. All motor RPMs and temperatures are recorded, along with a load status of zero, indicating no payload. There are no detected faults during this time.
+
+Indicators of Safe Flight
+Stable Motor Commands:
+
+The motor commands (m1_cmd, m2_cmd, m3_cmd, m4_cmd) are equal and remain at a high value (around 4398.23). This uniformity can indicate that the UAV is maintaining a stable power output across all motors, which is a positive sign for flight stability.
+Position Data:
+
+The actual position data (x_actual, y_actual, z_actual) shows relatively small values, suggesting that the UAV is likely close to the ground or hovering in a confined area. This is typical for safe, controlled flights.
+Zero Velocities:
+
+The velocities (mvx, mvy, mvz) are all zero, indicating that the UAV is not in motion at that moment. This could mean it is in a stable hover or waiting to execute further commands, which is generally safe behavior.
+Zero Roll, Yaw, and Pitch:
+
+The roll, yaw, and pitch angles being zero suggest that the UAV is level and not experiencing any unwanted rotation or tilting, which contributes to flight safety.
+Normal RPM Values:
+
+The RPM values for the motors (rpm_m1, rpm_m2, rpm_m3, rpm_m4) are all recorded (though the actual numbers were not provided). If these values are within normal operating ranges, it indicates that the motors are functioning properly.
+Current and Temperature Readings:
+
+The current readings (I_m1, I_m2, I_m3, I_m4) and temperature readings (T_m1, T_m2, T_m3, T_m4, etc.) are essential for monitoring motor performance. If these values are within normal limits (not exceeding the maximum rated current or temperature for the motors), it can indicate safe operation.
+Load Status:
+
+A load status of zero indicates that the UAV is not carrying any additional weight, which could enhance stability and safety during flight.
+No Faults Detected:
+
+The absence of faults in the fault column suggests that there are no detected issues with the UAV during this data collection period.
